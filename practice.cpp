@@ -190,5 +190,58 @@ int main()
     //     }
     //     cout << endl; // This will move to next line after each line of * is printed
     // }
+
+    // int n=4;
+    // int num=1;
+    // for(int i=0; i<n; i++){
+    //     for(int ii=0; ii<n;ii++){
+    //         cout<<num<<" ";
+    //         num++;
+    //     }
+    //     cout<<endl;
+    // }
+
+    
+    // char ch='A';
+    // for(int i=0; i<n; i++){
+    //     for(int ii=0; ii<n;ii++){
+    //         cout<<ch<<" ";
+    //         ch++;
+    //     }
+    //     cout<<endl;
+    // }
+
+// int n=5;
+// char ch='A';
+
+// for(int i=1; i<=n;i++){
+        
+//     for(int ii=0; ii<i; ii++){
+//         cout<<ch;
+        
+//     }
+//     ch++;
+//     cout<<endl;
+// }
+
+
+
+    // int rows;
+
+    // cout << "Enter the number of rows for the pyramid: ";
+    // cin >> rows;
+
+    // for (int i = 1; i <= rows; i++) {
+    //     // Print spaces for alignment
+    //     for (int j = 1; j <= rows - i; j++) {
+    //         cout << " ";
+    //     }
+    //     // Print stars
+    //     for (int k = 1; k <= (2 * i - 1); k++) {
+    //         cout << "*";
+    //     }
+    //     // Move to the next line
+    //     cout << endl;
+    // }
     return 0;
 }
