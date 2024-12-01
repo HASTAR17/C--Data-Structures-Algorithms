@@ -3,7 +3,7 @@
 namespace contains all the standard C++ library functions and objects. By using this directive, you
 can directly access the functions and objects in the `std` namespace without having to prefix them
 with `std::`. This helps in writing cleaner and more concise code. */
-using namespace std; 
+using namespace std;
 int main()
 {
     // int age = 23;
@@ -113,22 +113,82 @@ int main()
     //     cout << "The number " << num << " is odd\n";
     // }
 
-// char in;
-// cout<<"Enter a character: ";
-// cin>>in;
+    // char in;
+    // cout<<"Enter a character: ";
+    // cin>>in;
 
-/* The condition `if(in>='a' && in<='z')` is checking if the character inputted by the user is a
-lowercase letter. It checks if the character `in` is greater than or equal to 'a' and less than or
-equal to 'z'. If this condition is true, it means that the character is a lowercase letter, and the
-program will output "Lowercase". Otherwise, it will output "Uppercase". */
-// if(in>='a' && in<='z'){
-//     cout<<"Lowercase\n";
+    /* The condition `if(in>='a' && in<='z')` is checking if the character inputted by the user is a
+    lowercase letter. It checks if the character `in` is greater than or equal to 'a' and less than or
+    equal to 'z'. If this condition is true, it means that the character is a lowercase letter, and the
+    program will output "Lowercase". Otherwise, it will output "Uppercase". */
+    // if(in>='a' && in<='z'){
+    //     cout<<"Lowercase\n";
 
-// }else{
-//     cout<<"Uppercase";
-// }
+    // }else{
+    //     cout<<"Uppercase";
+    // }
 
+    // Ternary Statements(Ternary means three)
 
+    // int n= 17;
 
+    // cout<< (n>=0? "Positive" : "Negative")<<endl;
+
+    // Loops*****
+    //  int i=1;
+    //  int n=5;
+    //  int sum=0;
+
+    // While Loop
+
+    // while(i<=n){
+    //     cout<<i;
+    //     sum+=i;
+    //     i++;
+    // }
+
+    // For Loop
+
+    // for(i;i<=n;i++){
+    //     cout<<i<<", ";
+    //     sum+=i;
+    // }
+
+    // Do-While Loop
+
+    // do{
+    //     cout<<i;
+    //     sum+=i;
+    //     i++;
+    // }while(i<=n);
+    // cout<<"\n"<<sum<<endl;
+
+    // Prime Number Check
+    //  bool isPrime;
+    //  int n=8;
+    //  for(int i=2; i<=n-1; i++){
+    //      if(n%i==0){
+    //           isPrime=false;
+    //          break;
+    //      }else{
+    //             isPrime=true;
+    //      }
+    //  }
+    //  cout<<(isPrime?"Number is prime":"Number is not prime")<<endl;
+
+    // Nested Loop
+
+ /* The code snippet you provided is using nested loops to create a pattern of asterisks (`*`). Here's
+ a breakdown of what the code does: */
+    // int n = 5;
+    // for (int i = 1; i <= n; i++)
+    // { // This loop will generate Line or Enter
+
+    //     for (int ii = 1; ii <= i; ii++) //This loop will generate *
+    //     {
+    //         cout << "*";
+    //     }
+    //     cout << endl; // This will move to next line after each line of * is printed
+    // }
     return 0;
 }
