@@ -31,6 +31,27 @@ using namespace std;
         
 //     }
 
+int linearSearch(int ar[],int size,int tar){
+    for(int i=0; i<size;i++){
+        if(ar[i]==tar){
+            return i;
+        }
+    }
+return -1;
+}
+
+
+// Function to demonstrate Pass by Value
+void passByValue(int num) {
+    num = num * 2; // Modifies the copy
+}
+
+// Function to demonstrate Pass by Reference
+void passByReference(int &num) {
+    num = num * 2; // Modifies the original variable
+}
+
+
 int main()
 {
     // int age = 23;
@@ -413,6 +434,53 @@ int main()
 //   cout<<sizeof(long long int)<<endl;
 //   cout<<sizeof(short int)<<endl;
   
+  //Arrays
+//smallest number findout
+//   int ar[]={2,5,8,0,6,4};
+//   int size= sizeof(ar)/sizeof(ar[0]);
+//   int smallest= INT8_MAX;
+//   for(int i=0; i<size;i++){
+//     if(ar[i]<smallest){
+//         smallest=ar[i];
+//     }
+//   }
+//     cout<<smallest<<endl;
+
+//linear Search
+// int arr[]={1,2,3,45,6};
+// int size=5;
+// int target=6;
+// cout<<linearSearch(arr,size,target);
+
+//Reverse Array
+
+// int start=0, end=5;
+// int arr[]={1,2,3,4,5,6};
+// while(start<end){
+//     swap(arr[start],arr[end]);
+//     start++;end--;
+// }
+// cout<<"Reverse array is: ";
+// for (int i = 0; i < 6; i++)
+// {
+//     cout<<arr[i]<<" ";
+// }
+// cout<<endl;
+
+//pass by value & reference
+//passByValue= ভ্যালু পাঠায় যার কারণে প্রধান ফাংশন অপরিবর্তিত থাকে।
+//passByReference= রেফারেন্স অর্থাৎ অ্যাড্রেস পাঠায় যার ফলে প্রধান ফ্যানশনেও পরিবর্তন হয় 
+  
+    // int a = 5, b = 5;
+
+    // passByValue(a);
+    // cout << "After passByValue, a = " << a << endl; // Original value unchanged
+
+    // passByReference(b);
+    // cout << "After passByReference, b = " << b << endl; // Original value modified
+
+
+
     return 0;
 
 }
