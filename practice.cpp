@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 /* `using namespace std;` is a directive that tells the compiler to use the `std` namespace. The `std`
 namespace contains all the standard C++ library functions and objects. By using this directive, you
 can directly access the functions and objects in the `std` namespace without having to prefix them
@@ -470,6 +471,7 @@ int main()
 //pass by value & reference
 //passByValue= ভ্যালু পাঠায় যার কারণে প্রধান ফাংশন অপরিবর্তিত থাকে।
 //passByReference= রেফারেন্স অর্থাৎ অ্যাড্রেস পাঠায় যার ফলে প্রধান ফ্যানশনেও পরিবর্তন হয় 
+//array pass adress or reference so main function will also modified by user define function
   
     // int a = 5, b = 5;
 
@@ -479,8 +481,32 @@ int main()
     // passByReference(b);
     // cout << "After passByReference, b = " << b << endl; // Original value modified
 
+/***Vectors***/
 
+// vector<int>vec={1,2,3};//vector initialized by the numbers given
+// vector<int>vect(5,1); //this means vector size is 5 and it'll initialized by 1
 
+// cout<<vect[3]<<endl;
+// cout<<vec[2]<<endl;
+// vector<char>vecto={'a','b','d','f'};
+// cout<<"Vecto value printing through for each loop: "<<endl;
+// for(char value: vecto){
+//     cout<<value<<" ";
+// }
+// cout<<endl;
+
+//Vector function
+
+// vector<int>ve;
+
+// cout<<"size of the vector is: "<<ve.size()<<endl; //says vector size, intially now 0
+// ve.push_back(40); //The function ve.push_back(40) does not return anything, so trying to output it using cout results in an error. 
+// cout<<"size of the vector after push_back is: "<<ve.size()<<endl;
+// ve.pop_back(); //will pop/remove the value from last index
+// ve.push_back(50);
+// cout<<"font: "<<ve.front()<<endl;//can see first index of the vector element
+// cout<<"back: "<<ve.back()<<endl;//can see last index of the vector element
+// cout<<"At index 0: "<<ve.at(0);
     return 0;
 
 }
