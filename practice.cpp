@@ -4,6 +4,33 @@ namespace contains all the standard C++ library functions and objects. By using 
 can directly access the functions and objects in the `std` namespace without having to prefix them
 with `std::`. This helps in writing cleaner and more concise code. */
 using namespace std;
+// int printHello(){ //we have to write function before main function
+
+//     cout<<"Hello Function!\n";
+//     return 3;
+// }
+
+// int factorial(int n){
+//    int fact=1;
+//     for(int i=1; i<=n; i++){
+//         fact*=i;
+//     }
+//     return fact;
+// }
+
+// bool isPrime(int num){
+//     if(num<=1){
+//         return false;
+//     }
+//     for(int i=2; i*i<=num;i++){
+//         if(num%i==0){
+//             return false;
+//         }
+//         }
+//             return true;
+        
+//     }
+
 int main()
 {
     // int age = 23;
@@ -243,5 +270,110 @@ int main()
     //     // Move to the next line
     //     cout << endl;
     // }
+
+    //Pyramid Pattern
+
+    // int n=5;
+
+    // for(int i = 0; i <n; i++){ //line
+    //     for(int ii=0; ii<n-i; ii++){//for spaces
+    //         cout<<" ";
+    //     }
+    //     for(int iii=1 ; iii<=i+1; iii++ ){ //num1
+    //         cout<<iii;
+    //     }
+    //     for(int iv=i ; iv>=1; iv--){ //num2
+    //         cout<<iv;
+    //     }
+    // cout<<endl;
+    // }
+
+    //Butterfly Pattern
+    // int n=3;
+
+    // for(int i=0; i<n; i++){ //for line
+    
+    //     for(int j=0;j<=i; j++ ){//first triangle
+    //         cout<<"*";
+    //     }
+    //     for(int k=1; k<(n-i);k++){
+    //         cout<<"  "; //double space 
+    //     }
+    //      for(int j=0;j<=i; j++ ){ //second tiangle part, same as the first one but looks somehat reverse just beacuse of the spaces
+    //         cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
+    // for(int i=0; i<n; i++){ //for line
+
+    //     for(int j=n;j>i; j-- ){//first triangle
+    //         cout<<"*";
+    //     }
+    //     for(int k=n; k<(n+i);k++){
+    //         cout<<"  "; //double space 
+    //     }
+    //      for(int j=n;j>i; j-- ){ //second tiangle part, same as the first one but looks somehat reverse just beacuse of the spaces
+    //         cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
+
+    //Functions
+    // printHello(); //function call 
+    // cout<<printHello()<<"\n";//print the value of function it'll return
+//Factorial
+//Binominal=nCr
+    // int n;
+    // cin>>n;
+    // int r;
+    // cin>>r;
+    // int nFact= factorial(8);
+    // int rFact= factorial(2);
+    // int sub=n-r;
+    // int subFact= factorial(sub);
+    // cout<<"Binominal is: "<<(nFact/(rFact*subFact))<<endl;
+
+// int n=4;
+// if(n>5){
+//     cout<<"Number is greater";
+//     return 0; //this will terminate the program
+// }else{
+//     cout<<"Not";
+// }
+// cout<<"After return 0";
+
+//Digit Print of a number
+
+// int num=145;
+// int digitSum=0;
+// while(num>0){
+//     int digit= num%10;  //this will give digit
+//     digitSum+=digit;
+//     num/=10;   //this will remove that digit 
+// }
+// cout<<"Sum of the digit are: "<<digitSum <<endl;
+  
+    //Print all the prime number
+  
+//  int n;
+//     cout << "Enter a number to print all the prime numbers within its range: ";
+//     cin >> n;
+
+//     cout << "Prime numbers are: ";
+//     for (int i = 0; i <= n; i++) {
+//         if (isPrime(i)) {  // Directly check if the number is prime
+//             cout << i << " ";
+//         }
+//     }
+//     cout << endl;
+  
+  
+  
+  
+  
+  
     return 0;
+
 }
+
+
