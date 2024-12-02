@@ -367,10 +367,51 @@ int main()
 //     }
 //     cout << endl;
   
+  //Decimal to Binary
+
+//   int n=15;
+//   int pow=1; //10^0=1 initialize
+//   int ans=0;
+//   int rem=0;
+
+//   while(n>0){
+//     rem=n%2; //15%2==1
+//     n/=2;  //15/2==7
+//     ans+=(rem*pow);//0+1*1=1
+//     pow*=10;
+//   }
+//   cout<<ans<<endl;
+
+//Binary to Decimal
+//   int n=111;
+//   int pow=1; //2^0=1 initialize
+//   int ans=0;
+//   int rem=0;
+
+//   while(n>0){
+//     rem=n%10; //111%10==1
+//     n/=10;  //111/10==11
+//     ans+=(rem*pow);//0+1*1=1
+//     pow*=2;
+//   }
+//   cout<<ans<<endl;
   
+  //Bitwise Operator
+
+//   int n=4, m=8;
+
+//   cout<<(n & m)<<endl; //0 bitwise AND
+//   cout<<(n | m)<<endl; //12 bitwise OR
+//   cout<<(n ^ m)<<endl; //12 bitwise XOR= সেম থাকলে ০
+//   cout<<(n<<m)<<endl; //n binary will left shift m times [n*2^m]
+//   cout<<(n>>m)<<endl; //n  binary will right shift m times [n/2^m]
+
   
-  
-  
+  //Data Type Modifier
+
+//   cout<<sizeof(long int)<<endl; 
+//   cout<<sizeof(long long int)<<endl;
+//   cout<<sizeof(short int)<<endl;
   
     return 0;
 
