@@ -507,6 +507,15 @@ int main()
 // cout<<"font: "<<ve.front()<<endl;//can see first index of the vector element
 // cout<<"back: "<<ve.back()<<endl;//can see last index of the vector element
 // cout<<"At index 0: "<<ve.at(0);
+
+// ve.push_back(3);  //size 1, capacity 1
+// ve.push_back(2);    //size 2 (capacity 1*2=2)
+// ve.push_back(5);    //size 3 (capacity 2*2=4)
+// ve.push_back(7);    //size 4 (capacity 4 cause last index was still empty)
+// ve.push_back(9);    //size 5 (capacity 4*2=8)
+
+// cout<<"Size :"<<ve.size()<<endl; //5
+// cout<<"Capacity: "<<ve.capacity()<<endl; //8
     return 0;
 
 }
