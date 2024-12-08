@@ -516,6 +516,56 @@ int main()
 
 // cout<<"Size :"<<ve.size()<<endl; //5
 // cout<<"Capacity: "<<ve.capacity()<<endl; //8
+
+//Subarray
+
+int n=7;
+int arr[]={1,2,3,4,5,6,7};
+
+// for(int start=0; start<n; start++){ //outer loop when start 1
+
+//     for(int end=start+1; end<=n; end++){ //middle loop run 1->=4 times
+
+//         for(int i=start; i<end;i++){ // inner loop first full iteration 1->1->arr[1]=2, 
+//             cout<<arr[i];
+//         }
+//         cout<<" ";
+//     }
+//     cout<<endl;
+// }
+
+
+// Maximum Subarray Sum
+
+// int maxSum= INT_FAST8_MIN;
+// int curSum=0;
+// for(int start=0; start<n; start++){ 
+//     curSum=0;
+
+//     for(int end=start; end<n; end++){ 
+
+//         curSum += arr[end];
+//         maxSum= max(curSum,maxSum);
+//      }
+//     }
+
+// cout<<"Maximum Subarray Sum: "<<maxSum<<endl;
+
+// //Kadan'S Algorithm -linear complexity O(n)-> if current sum = minus value... reset it to 0;
+
+
+// curSum=0; maxSum=0;
+// for(int i=0; i<n; i++){
+//     curSum+= arr[i];
+//     if(curSum<0){
+//         curSum=0;
+//     }else{
+//         maxSum= max(curSum,maxSum);
+//     }
+// }
+// cout<<"Kadan's Maximum: "<<maxSum<<endl;
+
+
     return 0;
 
 }
